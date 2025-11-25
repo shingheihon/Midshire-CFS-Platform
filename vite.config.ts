@@ -2,26 +2,27 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  base: '/CFS-Platform/',
   plugins: [react()],
   server: {
     allowedHosts: true,
   },
   esbuild: {
     logOverride: {
-      'ignored-directive': 'silent', 
+      'ignored-directive': 'silent',
     },
   },
-  logLevel: 'info', 
+  logLevel: 'info',
   build: {
     rollupOptions: {
       onwarn(warning, warn) {
         // ignore certain harmless warnings
         if (
           warning.message.includes('Module level directives') ||
-          warning.message.includes('"use client"')  ||
+          warning.message.includes('"use client"') ||
           warning.message.includes('"was ignored"')
         ) {
-          return; 
+          return;
         }
 
         // FAIL build on unresolved imports
