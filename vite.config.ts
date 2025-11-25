@@ -2,7 +2,7 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/CFS-Platform/' : '/',
+  base: mode === 'production' ? '/Midshire-CFS-Platform/' : '/',
   plugins: [react()],
   server: {
     allowedHosts: true,

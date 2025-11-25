@@ -61,7 +61,7 @@ const navigationItems: NavItem[] = [
     label: 'AI & Intelligence',
     icon: <Brain className="w-5 h-5" />,
     children: [
-      { label: 'AI Summary', path: '/app/ai/summary', icon: <Brain className="w-4 h-4" /> },
+      { label: 'AI Call Centre', path: '/app/ai/summary', icon: <Brain className="w-4 h-4" /> },
       { label: 'AI Alerts', path: '/app/ai/alerts', icon: <Brain className="w-4 h-4" /> },
       { label: 'Pattern Analysis', path: '/app/ai/patterns', icon: <Brain className="w-4 h-4" /> },
       { label: 'Crime Predictions', path: '/app/ai/predictions', icon: <Brain className="w-4 h-4" /> },
