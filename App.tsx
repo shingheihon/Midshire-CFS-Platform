@@ -46,7 +46,7 @@ import GDPRCompliance from './src/pages/app/compliance/GDPR.tsx';
 const App: React.FC = () => {
   return (
     <Theme appearance="inherit" radius="large" scaling="100%">
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <main className="min-h-screen font-inter">
           <Routes>
             <Route path="/" element={<Landing />} />
