@@ -77,7 +77,7 @@ export default function IncidentTriage() {
                       Request More Info
                     </button>
                     <button className="flex-1 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded text-sm font-semibold transition-colors">
-                      Reject
+                      Make Your Own Plan
                     </button>
                   </>
                 ) : (
