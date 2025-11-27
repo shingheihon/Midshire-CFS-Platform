@@ -300,7 +300,7 @@ export default function GlobalPersonCheck() {
                     Data Integration Information
                 </h3>
                 <ul className="text-blue-800 text-sm space-y-1">
-                    <li>• <strong>Data Source:</strong> Data synthesised from integrated legacy DBs (Arrest, Warrant, Patrol) via Qlik Replicate into Azure</li>
+                    <li>• <strong>Data Source:</strong> Data synthesised from integrated DBs (Arrest, Warrant, Patrol) via Qlik Replicate into Azure</li>
                     <li>• <strong>Security Model:</strong> Zero Trust architecture with Zone-Based Access (ZBA) and Role-Based Access Control (RBAC)</li>
                     <li>• <strong>Patrol Zone:</strong> Accessible to Police role - includes Arrest DB, Warrant DB, Patrol DB</li>
                     <li>• <strong>Intelligence Zone:</strong> Restricted to Detective role only - includes classified intelligence data</li>

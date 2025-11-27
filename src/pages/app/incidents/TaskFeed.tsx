@@ -76,7 +76,7 @@ export default function TaskFeed() {
         <div className="space-y-6">
             <div>
                 <h1 className="text-3xl font-bold text-slate-900 mb-2">Task Feed</h1>
-                <p className="text-slate-600">Real-time feed from legacy dispatch system</p>
+                <p className="text-slate-600">Real-time feed from Dispatch system</p>
             </div>
 
             {/* Legacy System Integration Badge */}
@@ -84,9 +84,9 @@ export default function TaskFeed() {
                 <div className="flex items-center gap-3">
                     <AlertCircle className="w-6 h-6 text-amber-600" />
                     <div>
-                        <h3 className="text-amber-900 font-bold text-sm">SOURCE: LEGACY DISPATCH SYSTEM</h3>
+                        <h3 className="text-amber-900 font-bold text-sm">SOURCE: DISPATCH SYSTEM</h3>
                         <p className="text-amber-700 text-xs mt-0.5">
-                            Tasks synchronised from CAD system via ISDN link, with 1-5 minutes delay.
+                            Tasks synchronised from CAD system via Azure Integration.
                         </p>
                     </div>
                 </div>
@@ -154,7 +154,7 @@ export default function TaskFeed() {
                         {/* Legacy System Footer */}
                         <div className="mt-4 pt-4 border-t border-slate-200">
                             <p className="text-xs text-slate-500 italic">
-                                ⓘ Task imported from legacy CAD system.
+                                ⓘ Task imported from CAD system.
                             </p>
                         </div>
                     </div>
@@ -165,9 +165,9 @@ export default function TaskFeed() {
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
                 <h3 className="text-blue-900 font-semibold mb-2">Integration Information</h3>
                 <ul className="text-blue-800 text-sm space-y-1">
-                    <li>• Tasks are read-only from the legacy Computer-Aided Dispatch (CAD) system</li>
-                    <li>• Synchronization occurs automatically via ISDN network connection</li>
-                    <li>• Officer assignments are managed in the legacy system</li>
+                    <li>• Tasks are read-only from the Computer-Aided Dispatch (CAD) system</li>
+                    <li>• Synchronization occurs automatically via Azure Integration</li>
+                    <li>• Officer assignments are managed in the CAD system</li>
                     <li>• Last sync: {new Date().toLocaleTimeString()}</li>
                 </ul>
             </div>
